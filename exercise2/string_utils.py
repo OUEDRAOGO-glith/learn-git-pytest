@@ -54,4 +54,4 @@ def capitalize_words(s: str) -> str:
     Returns:
         The input string with the first letter of each word capitalized
     """
-    return ' '.join(word.capitalize() for word in s.split(' ') if word)
+    return ' '.join(word.capitalize() if word else '' for word in s.split(' '))

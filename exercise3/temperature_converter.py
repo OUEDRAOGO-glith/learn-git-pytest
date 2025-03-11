@@ -1,4 +1,3 @@
-# Exercise 3: Temperature Converter
 from typing import Union
 
 # Defining a Temperature type for cleaner type hints
@@ -66,5 +65,5 @@ def kelvin_to_celsius(kelvin: Temperature) -> float:
         ValueError: If kelvin is less than 0 (below absolute zero)
     """
     if kelvin < 0:
-        raise ValueError("Temperature in Kelvin cannot be less than 0 (below absolute zero).")
+        raise ValueError("Temperature cannot be below absolute zero")
     return round(kelvin - 273.15, 2)
