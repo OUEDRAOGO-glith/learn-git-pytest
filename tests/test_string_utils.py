@@ -46,3 +46,4 @@ def test_capitalize_words() -> None:
     assert capitalize_words("a") == "A"
     assert capitalize_words("already Capitalized") == "Already Capitalized"
     assert capitalize_words("multiple   spaces") == "Multiple   Spaces"
+    assert capitalize_words("  leading and trailing  ") == "  Leading And Trailing  "
